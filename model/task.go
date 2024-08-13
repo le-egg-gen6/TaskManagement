@@ -10,7 +10,7 @@ const (
 )
 
 type Task struct {
-	ID     primitive.ObjectID `bson:"_id" json:"-"`
+	MongoModel
 	Title  string             `bson:"title" json:"title"`
 	UserID primitive.ObjectID `bson:"userID" json:"-"`
 }

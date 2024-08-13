@@ -68,4 +68,5 @@ func (sc *SignupController) Signup(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, signupResponse)
+	return
 }
